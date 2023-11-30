@@ -7,6 +7,7 @@
           {{ food.name }}
         </div>
         <span class="favorite {{ food.favorite ? '' : 'not' }}"> ❤ </span>
+        <div class="stars"></div>
         <div class="product-itemfooter">
           <div class="origins">
             <span *ngFor="let origin of food.origins">
