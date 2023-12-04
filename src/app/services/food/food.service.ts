@@ -8,6 +8,10 @@ import { Tag } from "../../shared/models/Tag";
 export class FoodService {
   constructor() {}
 
+  getFoodById(id: number): Food {
+    return this.getAll().find((food) => food.id == id)!;
+  }
+
   // get all the tag models instances
   getAllTags(): Tag[] {
     // literals gonna be calculated by the server
